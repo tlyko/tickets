@@ -52,8 +52,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'iprestrict.middleware.IPRestrictMiddleware',
-    'iprestrict.middleware.IPRestrictMiddleware',
-
 ]
 
 ROOT_URLCONF = 'my_project.urls'
