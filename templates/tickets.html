@@ -1,0 +1,18 @@
+{# Ticket Data Base/templates/Ticket Data Base/tickets.html #}
+{% load render_table from django_tables2 %}
+<!doctype html>
+<html>
+    <head>
+        <title>VPC Ticketing System</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    </head>
+    <body>
+        {% if user.is_authenticated %}
+            {% render_table table %}
+            <a href="{% url 'logout' %}"><button style="float: right; margin-right: 4%" >logout</button></a>
+        {% else %}
+            <p>You are not logged in</p>
+            <a href="{% url 'login' %}"><button type="submit">login</button></a>
+        {% endif %}
+    </body>
+</html>
