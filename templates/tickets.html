@@ -9,7 +9,7 @@
     <body>
         {% if user.is_authenticated %}
             {% render_table table %}
-            <a href="{% url 'logout' %}"><button style="float: right; margin-right: 4%" >logout</button></a>
+            <a class="tickets-logout" href="{% url 'logout' %}"><button style="float: right; margin-right: 4%" >logout</button></a>
         {% else %}
             <p>You are not logged in</p>
             <a href="{% url 'login' %}"><button type="submit">login</button></a>

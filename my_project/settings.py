@@ -25,7 +25,7 @@ SECRET_KEY = 'l5fqe6^wb2)t@os^i-bw&w27+m%5^(%nw=v-2ke@dl-l*b3^w3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.3']
+ALLOWED_HOSTS = ['192.168.1.3','127.0.0.1']
 
 # Application definition
 
@@ -123,6 +123,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'assets'),  # Here you tell django to look for a folder named 'assets'
+]
 
 LOGIN_REDIRECT_URL = '/tickets/'
 LOGOUT_REDIRECT_URL = 'base'
