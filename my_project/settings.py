@@ -122,15 +122,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-# STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'assets'),  # Here you tell django to look for a folder named 'assets'
-# ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'assets'),  # Here you tell django to look for a folder named 'assets'
+]
 
-# STATIC_ROOT = '/mnt/e/Pyhon/Static/django_ticket_database/static/'
+STATIC_ROOT = '/mnt/e/Pyhon/Static/django_ticket_database/static/'
 
-# DISABLE_COLLECTSTATIC = 1
+DISABLE_COLLECTSTATIC = 1
 
 LOGIN_REDIRECT_URL = '/tickets/'
 LOGOUT_REDIRECT_URL = 'base'
