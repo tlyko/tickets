@@ -128,7 +128,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'assets'),  # Here you tell django to look for a folder named 'assets'
 ]
 
-STATIC_ROOT = '/var/www/django_ticket_database/static/'
+STATIC_ROOT = '/mnt/e/Pyhon/Static/django_ticket_database/static/'
 
 LOGIN_REDIRECT_URL = '/tickets/'
 LOGOUT_REDIRECT_URL = 'base'
