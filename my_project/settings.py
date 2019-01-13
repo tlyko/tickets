@@ -130,6 +130,8 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = '/mnt/e/Pyhon/Static/django_ticket_database/static/'
 
+DISABLE_COLLECTSTATIC = 1
+
 LOGIN_REDIRECT_URL = '/tickets/'
 LOGOUT_REDIRECT_URL = 'base'
 
