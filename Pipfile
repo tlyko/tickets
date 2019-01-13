@@ -6,7 +6,11 @@ name = "pypi"
 [packages]
 django = "==2.1"
 django-tables2 = "==2.0.3"
+<<<<<<< HEAD
 django-iprestrict = "==1.7.0"
+=======
+django-iprestrict= "==1.7.0"  
+>>>>>>> ce5884279eab270d6e0c46c9a9e6a366cd2e6edd
 
 [dev-packages]
 pylint = "*"
